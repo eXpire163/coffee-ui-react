@@ -46,7 +46,6 @@ const useStyles = makeStyles((theme) => ({
 
 const CoffeCard = (props) => {
     const classes = useStyles();
-    const bull = <span className={classes.bullet}>•</span>;
     const { avatarUrl, title, price, description, imageUrl } = props
     return (
         <Card variant="outlined">

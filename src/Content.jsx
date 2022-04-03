@@ -1,7 +1,7 @@
 import { Grid } from '@material-ui/core'
 import React from 'react'
 import CoffeCard from './CoffeCard'
-import coffeeMakerList from './constants'
+import coffeeList from './constants'
 
 function Content() {
 
@@ -9,7 +9,7 @@ function Content() {
         <>
             <Grid container spacing={4}>
 
-                {coffeeMakerList.map((maker) => (
+                {coffeeList().map((maker) => (
                     <Grid item xs={12} sm={4} key={maker.title}>
                         <CoffeCard {...maker} />
                     </Grid>
