@@ -5,21 +5,15 @@ import coffeeMakerList from './constants'
 
 function Content() {
 
-    console.log(coffeeMakerList)
-
     return (
         <>
             <Grid container spacing={4}>
 
                 {coffeeMakerList.map((maker) => (
-                    <Grid item xs={12} sm={4}>
+                    <Grid item xs={12} sm={4} key={maker.title}>
                         <CoffeCard {...maker} />
                     </Grid>
                 ))}
-
-
-
-
             </Grid>
 
 
