@@ -1,3 +1,9 @@
+
+## thanks to
+
+- [Web Dev Simplified](https://www.youtube.com/watch?v=hQAHSlTtcmY&t)
+- [Anthony Sistilli](https://youtu.be/H_PO_GY4xXU)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
