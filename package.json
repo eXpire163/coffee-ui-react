@@ -2,6 +2,7 @@
   "name": "materia-ui-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://expire163.github.io/coffee-ui-react/",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
