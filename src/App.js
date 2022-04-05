@@ -11,9 +11,14 @@ const LOCAL_STORAGE_KEY = 'coffeeApp.darkmode'
 const App = () => {
 
   const [darkMode, setDarkMode] = useState(true)
+  const [cart, setCart] = useState([])
 
   function changeMode() {
     setDarkMode(!darkMode)
+  }
+
+  function showCart(cart) {
+    setCart(cart)
   }
 
   // toggle darkmode
@@ -39,12 +44,12 @@ const App = () => {
       <Paper>
         <Grid container direction='column'>
           <Grid item >
-            <Header changeMode={changeMode} isDarkMode={darkMode} />
+            <Header changeMode={changeMode} isDarkMode={darkMode} cart={cart} />
           </Grid>
           <Grid item container>
             <Grid item xs={false} sm={2}></Grid>
             <Grid item container xs={12} sm={8}>
-              <Content />
+              <Content showCart={showCart} />
             </Grid>
             <Grid item xs={false} sm={2}></Grid>
           </Grid>

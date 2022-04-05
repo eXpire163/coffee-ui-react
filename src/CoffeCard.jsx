@@ -44,9 +44,17 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+
+
+
 const CoffeCard = (props) => {
+
+
+
+
+
     const classes = useStyles();
-    const { avatarUrl, title, price, description, imageUrl } = props
+    const { avatarUrl, title, price, description, imageUrl, add, remove } = props
     return (
         <Card variant="outlined">
             <CardHeader
@@ -59,7 +67,7 @@ const CoffeCard = (props) => {
                     </IconButton>
                 }
                 title={title}
-                subheader={price}
+                subheader={"$" + price}
             />
             <CardMedia
                 className={classes.media}
@@ -74,7 +82,8 @@ const CoffeCard = (props) => {
 
             <CardActions>
                 <Button size="small">Buy now</Button>
-                <Button size="small">OFFER</Button>
+                <Button size="small" onClick={() => add({ title: title, price: price })}>Add</Button>
+                <Button size="small" onClick={() => remove({ title: title, price: price })}>Remove</Button>
             </CardActions>
         </Card>
     )
