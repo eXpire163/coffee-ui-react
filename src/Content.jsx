@@ -33,7 +33,7 @@ function Content({ showCart }) {
 
     useEffect(() => {
         showCart(cart)
-    }, [cart])
+    }, [cart, showCart])
 
     function add(product) {
         setCart({ product, type: 'add' });
